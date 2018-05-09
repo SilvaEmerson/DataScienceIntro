@@ -1,0 +1,181 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./revealjs/css/reveal.css">
+    <link rel="stylesheet" href="./revealjs/css/theme/white.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./highlight/styles/vs2015.css">
+    <script src="./highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style media="screen">
+      .panel{
+        background-color: rgb(228, 228, 237);
+        padding: 20px !important;
+        border-radius: 10px;
+      }
+
+      img{
+        border-style: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+      }
+
+      pre{
+        border-style: none !important;
+        box-shadow: none !important;
+        background-color: transparent !important;
+        width: 100% !important;
+      }
+    </style>
+
+    <script>
+    	var link = document.createElement( 'link' );
+    	link.rel = 'stylesheet';
+    	link.type = 'text/css';
+    	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    	document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides" style="width:70%;">
+
+        <section data-background-image="./images/background.jpeg">
+              <h1 class="title" style="text-transform: none;">Data Science</h1>
+              <h6 style="text-transform: none; color: white">Uma breve introdução</h6>
+        </section>
+
+        <!-- Personal presentation -->
+        <!-- <section>
+          <table style="color:rgb(29, 35, 38); font-size:20pt;">
+              <div class="panel">
+                <p><span class="icons">&#xf2b9; </span>Émerson Silva</p>
+                <p><span class="icons">&#xf19d; </span>Universidade Federal de Alagoas</p>
+                <p><span class="icons">&#xf0e0; </span>emersonjose877@gmail.com</p>
+                <p><span class="icons">&#xf09b; </span>@<a href="https://www.github.com/silvaemerson">silvaemerson</a></p>
+              </div>
+          </table>
+        </section> -->
+
+        <section>
+
+            <section>
+                <h2>O que é Data Science?</h2>
+
+                <blockquote cite="https://towardsdatascience.com/data-science-for-beginners-850c3376a34a">
+                    “Data Science é uma ciência interdisciplinar que se trata de processamento de um grande volume de dados usando métodos estatísticos para extração de ideias sobre os mesmos”.<sup><a href="#refs">1</a></sup>
+                </blockquote>
+            </section>
+
+            <section>
+                <img src="./images/ds1.png" height="85%">
+                <p>Fonte: <a href="#refs">2</a> </p>
+            </section>
+
+            <section>
+                <p>Em 2006, Clive Humby, Matemático inglês e arquiteto do Tesco Clubcard cunhou a frase "Dados são o novo óleo". Falou o seguinte:</p>
+                <blockquote cite="https://becominghuman.ai/data-science-simplified-principles-and-process-b06304d63308">
+                    ”Dados são o novo óleo. É valioso, mas se não refinado não pode ser usado. Tem que ser transformado em gás, plástico, produtos químicos, etc. para criar um entidade valiosa que crie uma atividade rentável; então, dados devem ser esmiússados, analizados para terem valor.” <sup><a href="#refs">3</a></sup>
+                </blockquote>
+            </section>
+
+        </section>
+
+        <section>
+
+            <section>
+                <h2>Workflow</h2>
+                <img src="./images/ds2.png" alt="">
+                <p>Fonte: <a href="#refs">3</a></p>
+            </section>
+
+            <section>
+                <h2>1. Definir o problema de negócio</h2>
+                <p>Exemplo: Uma empresa precisa aumentar a base de clientes visando novos segmentos e reduzindo a rotatividade de clientes.</p>
+            </section>
+
+            <section>
+                <h2>
+                    2. Decompor para um problema de Aprendizado de Máquina
+                </h2>
+                <p>Exemplos:</p>
+                <p>Reduzir a rotatividade de clientes em x%.</p>
+                <p>Identificar novos segmentos de clientes para marketing direcionado.</p>
+            </section>
+
+            <section>
+                <h2>3. Preparação de Dados</h2>
+            </section>
+
+            <section>
+                <h2>4. Análise Exploratória de Dados</h2>
+            </section>
+
+            <section>
+                <h2>5. Modelagem</h2>
+            </section>
+
+            <section>
+                <h2>6. <i>Deployment</i> e Avaliação</h2>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h1>Ferramentas</h1>
+                <p><span class="icons">&#xf0a9; Python</p>
+                <p><span class="icons">&#xf0a9; Julia</p>
+                <p><span class="icons">&#xf0a9; R</p>
+            </section>
+
+            <section>
+                <h1>Python</h1>
+                <img src="./images/ds3.png" alt="" height="85%">
+            </section>
+
+            <section>
+                <p><span class="icons">&#xf0a9; <a href="https://pandas.pydata.org/">Pandas</a></p>
+                <p><span class="icons">&#xf0a9; <a href="https://matplotlib.org/">Matplotlib</a></p>
+                <p><span class="icons">&#xf0a9; <a href="http://jupyter.org/">Jupyter</a></p>
+                <p><span class="icons">&#xf0a9; <a href="https://bokeh.pydata.org/en/latest/">Bokeh</a></p>
+                <p><span class="icons">&#xf0a9; <a href="https://seaborn.pydata.org/">Seaborn</a></p>
+                <p><span class="icons">&#xf0a9; <a href="http://www.numpy.org/">Numpy</a></p>
+            </section>
+        </section>
+
+        <section id="refs">
+          <section>
+            <h2>Referências</h2>
+          </section>
+          <section>
+            <div style="text-align:justify;">
+               <span class="icons">&#xf127; </span>1 - <a href="https://towardsdatascience.com/data-science-for-beginners-850c3376a34a">Data Science for Beginners</a><br>
+               <span class="icons">&#xf127; </span>2 - <a href="https://towardsdatascience.com/introduction-to-statistics-e9d72d818745">Data Science concepts you need to know! - Part 1</a><br>
+               <span class="icons">&#xf127; </span>3 - <a href="https://becominghuman.ai/data-science-simplified-principles-and-process-b06304d63308">Data Science Simplified Part 1: Principles and Process</a><br>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="./revealjs/lib/js/head.min.js"></script>
+    <script src="./revealjs/js/reveal.js"></script>
+    <script type="text/javascript">
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        transition: 'slide'
+      })
+
+      // Reveal.configure({backgroundTransition: 'zoom'})
+    </script>
+  </body>
+
+
+</html>
